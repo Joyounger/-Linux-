@@ -1,0 +1,16 @@
+use mysql
+
+SELECT user,host,password FROM user;
+
+DELETE FROM user WHERE user != 'root';
+
+GRANT all ON *.* TO rick@'192.168.0.0/255.255.255.0' IDENTIFIED BY '123';
+
+mysql -u rick -p
+
+
+CREATE TABLE children {
+		childno INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY;
+		fname VARCHAR{30},
+		age INTEGER;
+}
