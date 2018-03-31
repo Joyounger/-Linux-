@@ -1,0 +1,31 @@
+problem in coding with ndbm library 
+
+--------------------------------------------------------------------------------
+
+hi all
+has any one managed to run the codes of the book which include the library ndbm in Debian?
+I have compiled it in ubuntu but in Debian 4.0 there is no package named ndbm-dev and of course after compiling I get an error message 
+ndbm-gdbm.h : no such file or directory 
+
+
+
+
+Reply With Quote  
+
+  #2 (permalink)   Old August 8th, 2008, 12:32 PM  
+grunthus grunthus is offline 
+Registered User   Join Date: Aug 2008
+Location: , Shetland, United Kingdom.
+Posts: 1 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+Try compiling with -lgdbm_compat -lgdbm
+That is what I had to do on gentoo system
+
+
+ 

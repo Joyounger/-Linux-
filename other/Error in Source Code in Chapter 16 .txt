@@ -1,0 +1,30 @@
+ Error in Source Code in Chapter 16 
+
+--------------------------------------------------------------------------------
+
+CD Application will crash with a segmentation fault due to an error in source code line 68 @ app_mysql.c
+
+line reads
+
+*cd_id = new_cd_id;
+
+should be
+
+cd_id = new_cd_id;
+
+
+Reply With Quote  
+
+  #2 (permalink)   Old February 28th, 2009, 10:14 AM  
+cveks cveks is offline 
+Registered User   Join Date: Feb 2009
+Posts: 6 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+have same problem
+ 

@@ -1,0 +1,141 @@
+已确认勘误
+
+页码	勘误内容	提交人	修订印次
+
+编辑说明
+
+重印已修改	ycf128	--
+
+--	P85,17行。S_lW0TH 改为 S_IWOTH	hxlsensor	--
+
+
+
+33	5.  whlie->while	kingfs	9
+33	5.while语句，第二段 
+
+while condition do 应改为  while condition; do	2012Martin	19
+
+
+
+
+页码	勘误内容	提交人	修订印次
+39	第三段，这通常被称为短路径求值->这通常被称为短路求值	2012Martin	18
+47	方框内，set -allexport改为set -o allexport	2012Martin	19
+53	表 2-12 选项第三行命令 
+-maxdepths N 应该是-maxdepth N，多了个s	373348214	17
+58	第3行 
+grep -E [a-z]\{10\} word2.txt的输出结果应删除Proceeding那行，因为Proceeding第一个字母为大写，不符合匹配条件。	2012Martin	19
+59	倒数第1行，变量i的值替换了$(i)->变量i的值替换了${i}	2012Martin	18
+60	实验程序的输出结果中 /usr/local/etc最后少了一个/，即应为 /usr/local/etc/，/usr也应为/usr/
+编辑说明
+
+上面的startx也没有/，原书也没有。原书错了？	2012Martin	19
+79	第4段第2行括号内 
+
+原文：文件的节点号可以通过ln -i命令查看 
+改为：文件的节点号可以通过ls -i命令查看	jedisonjow	13
+82	3.4节中，“l：标准输出”应为“1”，写成了小写字母“l”。	金石开	17
+84	84页，oflags参数通过必需文件访问模式->oflags参数通过命令文件访问模式	2012Martin	19
+85	3.4.4节S_1W0TH：写权限应为S_IWOTH：写权限	2012Martin	2
+
+
+
+
+
+页码	勘误内容	提交人	修订印次
+86	表3-3表头，“含义”应为“取值”	2012Martin	18
+90	文件类型标志中，S_FLNK -> S_IFLNK	2012Martin	19
+91	注意内容第二行，STEAMS模型不在本书->STREAMS模型不在本书	2012Martin	19
+94	3.5.9节，"直到出现下面某种情况：遇到换行符，已经传输了n-l个字符，或者到达文件尾" --> 应为`n-1个字符`，"1"为数字1。	金石开	17
+102	第14行，应去掉closedir，与最后一行重复。	2012Martin	20
+103	3.8.5节 
+“它在执行成功时返同0”,"返同"-->返回	金石开	17
+114	倒数第一行文字，“显示菜单内容的字符数组”应为“显示菜单内容的字符串数组”	2012Martin	20
+115	正文倒数第二段第二行，“我们使用命令set-oxtrace” -> “我们使用命令set-o xtrace” 少了空格	hojireal	11
+125	黑体字， struct tm *gmtime(const time_t timeval)  改为 struct tm *gmtime(const time_t *timeval)	mc426	9
+127	strftime函数原型中struct tm *timeptr应改为const struct tm *timeptr	2012Martin	20
+
+
+
+页码	勘误内容	提交人	修订印次
+128	实验代码strftime(buf, 256, "%A %d %B, %I:%S %p", tm_ptr)中 %S 应改为 %M。根据上下文意思，此处应是输出小时:分，但格式%I:%S却是小时:秒的格式。	2012Martin	20
+134	第三段第五行gethostbyname返回0 应该是gethostname返回0	破碎De星空	18
+145	正文第一行，字符数组menu应改为字符串数组menu。 
+2012Martin	20
+146	实验解析第二行，option字符数组 应改为 option字符串数组	2012Martin	20
+146	实验解析倒数第3行，“A/回车/Q/回车”应改为"a/回车/q/回车"	2012Martin	20
+169	P169的实例程序中，应为fprintf(out , "Choice: %s , greet); 
+编辑说明
+
+重印已修改	旸谷	2
+208	第三行代码 screen_line-应为screen_line--	2012Martin	20
+219	实验解析第二行，无法破化 应改为 无法破坏	2012Martin	20
+221	第二行，free函数的原型中ptr_to memory应为ptr_to_memory，少了一个下划线	2012Martin	20
+240	第(2)，设置了items_to_store和items_received两个结构，与下面的源代码不符，应为设置了items_to_store和item_retrieved两个结构	2012Martin	20
+
+
+
+
+
+页码	勘误内容	提交人	修订印次
+266	倒数第6行，default-storage-engine=INNOD应为default-storage-engine=INNODB	2012Martin	20
+269	第一行 
+
+原文：否则最好使用root帐号来登录 
+改为：否则最好不使用root帐号来登录	jedisonjow	13
+270	第2段第三行的命令行 
+
+原文：mysqld--verbose--help，遗漏了空格 
+改为：mysqld --verbose --help	jedisonjow	13
+270	第二段第二行命令mysql_safed-log应改为mysql_safed -log，中间留有空格	2012Martin	20
+270	8.1.3最后一行，你可以通常浏览->你可以通过浏览	2012Martin	20
+270	第2段第四行，mysqld -verbose -help 应改为 mysqld --verbose --help	2012Martin	20
+271	表8-2下面一行，可以不带任何参数的调用->可以不带任何参数调用	2012Martin	20
+271	“2. mysql命令”小节的第3段 
+
+原文：mysql -help | less 
+改为：mysql --help | less	jedisonjow	13
+284	表8-11，enum选项，下面三个MySQL应改为MYSQL	2012Martin	20
+297	最后一行，“结构MySQL_FIELD定义”应改为“结构MYSQL_FIELD定义”	2012Martin	20
+
+
+
+页码	勘误内容	提交人	修订印次
+266	倒数第6行，default-storage-engine=INNOD应为default-storage-engine=INNODB	2012Martin	20
+269	第一行 
+
+原文：否则最好使用root帐号来登录 
+改为：否则最好不使用root帐号来登录	jedisonjow	13
+270	第2段第三行的命令行 
+
+原文：mysqld--verbose--help，遗漏了空格 
+改为：mysqld --verbose --help	jedisonjow	13
+270	第二段第二行命令mysql_safed-log应改为mysql_safed -log，中间留有空格	2012Martin	20
+270	8.1.3最后一行，你可以通常浏览->你可以通过浏览	2012Martin	20
+270	第2段第四行，mysqld -verbose -help 应改为 mysqld --verbose --help	2012Martin	20
+271	表8-2下面一行，可以不带任何参数的调用->可以不带任何参数调用	2012Martin	20
+271	“2. mysql命令”小节的第3段 
+
+原文：mysql -help | less 
+改为：mysql --help | less	jedisonjow	13
+284	表8-11，enum选项，下面三个MySQL应改为MYSQL	2012Martin	20
+297	最后一行，“结构MySQL_FIELD定义”应改为“结构MYSQL_FIELD定义”	2012Martin	20
+
+
+
+页码	勘误内容	提交人	修订印次
+510	最后一段，将第11章中的接口函数->将第13章中的接口函数	2012Martin	20
+516	倒数第2段，避免文件系统应充斥->避免文件系统因充斥	2012Martin	20
+516	(5)接受一个连接，accept函数的参数应该规定数据类型 
+accept(server_sockfd,(struct sockaddr *)&client_address,(socklen_t *)&client_len)	李建轩	17
+526	第二段，Intel就是以字节序4-3-2-1存储到内存中，IBM PowerPC是以字节序1-2-3-4方式存储整数。因为Intel是小端存储方式，IBM PowerPC是大端存储方式。	2012Martin	20
+556	第一行代码中GTK_OBJECT (app)应改为GTK_OBJECT (button)	2012Martin	20
+556	第三段，调用gtk_button_new_with _lable，_label前不应该有空格	2012Martin	20
+572	实验下面一段，libgnomeui和libgome 应改为 libgnomeui和libgnome	2012Martin	20
+572	实验代码部分，MODULE 应改为 LIBGNOMEUI_MODULE	2012Martin	20
+576	倒数第二段，显示了menu3.c应为显示了menu2.c	2012Martin	20
+636	 第二段， “__STRICT_ANTI__” -> “__STRICT_ANSI__”	hojireal	12
+
+
+
+

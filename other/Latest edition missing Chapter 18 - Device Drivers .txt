@@ -1,0 +1,76 @@
+Latest edition missing Chapter 18 - Device Drivers 
+
+--------------------------------------------------------------------------------
+
+Was sad to see that this edition is almost a rehash of the last edition minus chapter 18 on device drivers:(
+
+I thought they would add more info, but they ended up taking it out.
+
+p
+
+
+Reply With Quote  
+
+  #2 (permalink)   Old March 26th, 2008, 10:01 AM  
+oppiet30 oppiet30 is offline 
+Registered User   Join Date: Mar 2008
+Location: Carbondale, Illinois, USA.
+Posts: 1 
+Thanks: 0
+Thanked 0 Times in 0 Posts 
+Send a message via ICQ to oppiet30 Send a message via AIM to oppiet30 Send a message via MSN to oppiet30 Send a message via Yahoo to oppiet30  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+They do mention it in the book. It is on page 96.
+
+
+
+Reply With Quote  
+
+  #3 (permalink)   Old April 14th, 2008, 03:48 AM  
+miksuh miksuh is offline 
+Registered User   Join Date: Apr 2008
+Location: Espoo, , Finland.
+Posts: 1 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+I also think it's disappointing that they removed device drivers chapter..
+
+
+Quote:
+quote:They do mention it in the book. It is on page 96.  
+
+Where??? I don't see any notice like that on page 96. 
+
+Sure "device drivers" is quickly mentioned on page 96, but there is no notice about chapter removal. On the 3rd edition of the book there was 77 pages long chapter 18 - Device Drivers.
+Reply With Quote  
+
+  #4 (permalink)   Old August 22nd, 2011, 03:58 PM  
+eightbits2011 eightbits2011 is offline 
+Registered User
+Points: 27, Level: 1 
+Points: 27, Level: 1 Points: 27, Level: 1 Points: 27, Level: 1 
+Activity: 0% 
+Activity: 0%  Activity: 0%  Activity: 0% 
+   Join Date: Jul 2011
+Location: Alabama
+Posts: 7 
+Thanks: 3
+Thanked 0 Times in 0 Posts  
+ 
+Default Missing chapter 18? 
+
+--------------------------------------------------------------------------------
+
+OK, I was interested in the ebook version, but don't want to purchase
+the book if it is incomplete.
+Glad I checked here first.
+ 

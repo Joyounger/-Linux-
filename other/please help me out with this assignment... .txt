@@ -1,0 +1,139 @@
+please help me out with this assignment... 
+
+--------------------------------------------------------------------------------
+
+I am really new to unix and dont know how to finish this assignment on time....proff. said he will be using MOSS to detect whether I downloaded the code..please help me..
+
+email me : vaidehi.pawar@yahoo.co.in
+
+Assignment 1
+Processes, Inter-Process Communication, and Concurrency
+Due September 10th midnight
+Summary
+In this assignment, you will create two versions of a simple multi-process game : one without and another with inter-process synchronization. You will also measure the relative performance of the two versions of your multi-process game.
+Objectives
+
+    * Learn how to create and terminate processes.
+    * Learn use of inter-process communication using shared memory, semaphores, signals, etc.
+    * Learn the basic workings of CPU scheduling code in Linux.
+
+Part A: Multi-Process Game of Turns
+
+In this part, you are asked to write a simple program that takes two command-line arguments P and N. The main process creates P other child processes, waits for all of them to complete, and then exits. All the child processes form one logical ring among each other. (In rest of the description, the term "process" refers to a "child process".) For example, if the processes are numbered 1 to P, then
+
+    * The next neighbor of process 1 is process 2,
+    * The next neighbor of process i is process i+1 for all i < P , and
+    * The next neighbor of process P is process 1, which completes a ring among the processes.
+
+Assume that a shared integer variable, called turn, identifies the number of the processes whose turn it is at any instant. A second process-local variable in each process, called me, identifies the identity of each process (i.e. each process stores its own identity in a per-process local variable me). A third per-process local variable, called next, identifies the next process in the ring.
+
+The processes sequentially pass the turns among each other in the logical ring. When each process gets its turn, it increments another shared variable called counter. The pseudo-code within each process for passing turns might look something as follows. (Note: Replace turn and counter below with appropriate ways of accessing data within shared memory regions).
+
+    while(turn != me ) 
+        /* do nothing - just busy loop*/ ; 
+
+    /* got my turn - increment counter */
+    counter = counter + 1;
+
+    /* give the turn to next process */
+    turn = next;  
+
+The program terminates when the each process has received N turns.
+
+In the above description, several programming details have been omitted for you to figure out. This includes
+
+    * Creating P child processes from main process.
+    * Constructing the logical ring among child processes.
+          o Initializing each child process's identity in the me variable.
+          o Initializing each child process' next neighbor in the next variable.
+    * Initializing the shared memory region and the shared data values.
+    * Have the main process wait for child processes to complete N turns before exiting.
+
+Part B: More Efficient Game of Turns
+
+You might notice that the program you wrote in Part A is inefficient because each process busy loops till the CPU scheduler kicks it out (after its time-slice is over) and allows another process to execute and make progress. (Does the program in Part A have a race condition? Why or why not?)
+
+What we ideally want is that each process should be given control of the CPU only when it is that process' turn. Modify the program you wrote in Part A (using appropriate synchronization mechanisms) such that each process gets to run (i.e., gets control of the CPU) only when it is that process's turn, and at no other time.
+
+Again, you would need to work out the programming details of how and where to use inter-process synchronization.
+Part C: Profiling the Game of Turns
+
+In this part, you are asked to write user-level profiling code in order to measure the performance of the two versions of programs you wrote in Part A and Part B. Use a combination of gettimeofday() system call and inter-process synchronization to measure (1) the average hand-over time between two consecutive processes in the ring and (b) the total execution time to complete N turns. Plot the measured values as graphs when varying number of processes P and number of turns N. Explain the results you obtain.
+Submission Guidelines
+
+    * Submit all your code files as ONE tarred-gzipped file (.tgz file) on the blackboard. DO NOT SUBMIT EACH FILE INDIVIDUALLY. Make one .tgz file. Check the submission guidelines on course web page for how to prepare a .tgz file.
+    * Also submit a report, either in PDF or DOC format, explaining the results from Part C.
+    * Bring your report with you at the demonstration time that you signed up for.
+
+
+Reply With Quote  
+
+  #2 (permalink)   Old September 3rd, 2008, 07:23 PM  
+gbianchi gbianchi is offline 
+Friend of Wrox
+Points: 7,395, Level: 36 
+Points: 7,395, Level: 36 Points: 7,395, Level: 36 Points: 7,395, Level: 36 
+Activity: 0% 
+Activity: 0%  Activity: 0%  Activity: 0% 
+   Join Date: Jun 2003
+Location: Capital Federal, , Argentina.
+Posts: 2,190 
+Thanks: 5
+Thanked 59 Times in 57 Posts 
+Send a message via MSN to gbianchi  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+We don't do homework...
+
+HTH
+
+Gonzalo
+
+================================================== =========
+Read this if you want to know how to get a correct reply for your question:
+http://www.catb.org/~esr/faqs/smart-questions.html
+^^Took that from dparsons signature and he Took that from planoie's profile
+================================================== =========
+My programs achieved a new certification (can you say the same?): 
+WORKS ON MY MACHINE
+http://www.codinghorror.com/blog/archives/000818.html
+================================================== =========
+I know that CVS was evil, and now i got the proof:
+http://worsethanfailure.com/Articles...-Hate-You.aspx
+================================================== =========
+Reply With Quote  
+
+  #3 (permalink)   Old September 4th, 2008, 04:05 PM  
+vaidehi vaidehi is offline 
+Registered User   Join Date: Sep 2008
+Location: , , .
+Posts: 3 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+m not asking to do home work just asking for some help....ya and if some1s dat smart even whole assignment will do
+
+
+Reply With Quote  
+
+  #4 (permalink)   Old September 10th, 2008, 04:57 PM  
+vaidehi vaidehi is offline 
+Registered User   Join Date: Sep 2008
+Location: , , .
+Posts: 3 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+some1 please help me out i've some how got extension till 13th of this month...no1s helping here....
+ 

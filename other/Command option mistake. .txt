@@ -1,0 +1,11 @@
+Command option mistake. 
+
+--------------------------------------------------------------------------------
+
+Ch. 2 "Shell programming"
+Page 62.
+
+(-maxdepths N)
+
+I think it's (-maxdepth N).
+Discovered at (22th Oct 2012)

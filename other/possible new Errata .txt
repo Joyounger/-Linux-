@@ -1,0 +1,22 @@
+ possible new Errata 
+
+--------------------------------------------------------------------------------
+
+hi there,
+
+in chapter 7 (Data management):
+the author talks about dynamic memory allocation in C using the stander C library function malloc(),
+
+he says in page 260 that:
+
+
+Quote:
+Eventually, when the application exhausts both the physical memory and the swap space, or when the
+maximum stack size is exceeded, the kernel finally refuses the request for further memory and may preemptively terminate the program.  
+
+now according to my knowledge malloc() allocate memory on the heap not the stack
+
+
+
+
+I think every thing is okey, when you use malloc() function, you allocate memory on the heap. But also the stack size may be exceeded. Because the stack is used to dynamically allocate the local variables used in functions so it may be exceeded. Nothing wrong, I don't think you can find any error in understanding the content of the book by probability 0 %.

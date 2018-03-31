@@ -1,0 +1,41 @@
+The confusion is from book Beginning Linux Programming by Neil Mathew and Richard Stones.
+
+In the book using DBM they have taught how to bulid a CD application to store CD data. They have used two structs one for storing CD catalog entry and one for storing CD tracks entry.The structs are as below:
+
+
+Code:
+/* The catalog table */
+#define CAT_CAT_LEN 30
+#define CAT_TITLE_LEN 70
+#define CAT_TYPE_LEN 30
+#define CAT_ARTIST_LEN 70
+
+typedef struct {
+char catalog[CAT_CAT_LEN + 1];
+char title[CAT_TITLE_LEN + 1];
+char type[CAT_TYPE_LEN + 1];
+char artist[CAT_ARTIST_LEN + 1];
+} cdc_entry;
+
+/* The tracks table, one entry per track */
+#define TRACK_CAT_LEN CAT_CAT_LEN
+#define TRACK_TTEXT_LEN 70
+typedef struct {
+char catalog[TRACK_CAT_LEN + 1];
+int track_no;
+char track_txt[TRACK_TTEXT_LEN + 1];
+} cdt_entry;Not exactly getting what a:
+
+char catalog[CAT_CAT_LEN];
+
+is meant for in cdc_entry structure As i thought earlier user will type name of the album in that field but title is there for that. Then what catalog field is meant for actually not getting. What i think of various fileds can have is:
+
+title = name of the album(Reckless)
+
+type = is like genere (POP, ROCK, HIPHOP)
+
+artist = who sang the song (Bryan adams)
+
+catalog = ?(for what this field)
+
+If anyone has been through this book and got what this field(catalog) should actually store.

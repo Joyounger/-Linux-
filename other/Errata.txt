@@ -1,0 +1,181 @@
+
+About This Title  |  Download Code  |  Errata  |  P2P Forum for This Title 
+ 
+ 
+
+Do you think you've discovered an error in this book? Please check the list of errata below to see if we've already addressed the error. If not, please submit the error via our Errata Form. We will attempt to verify your error; if you're right, we will post a correction below. 
+
+
+Chapter
+
+Page
+
+Details
+
+Date
+
+Print Run
+
+ 55 Error in Text
+Try It Out, section 2
+
+ Currently reads: ?export2?
+ Should read: ?./export2?  02/23/2012  
+ 55 Error in Text
+In the ?How it works? section, second sentence:
+
+ HOW IT READS NOW:
+ ...so when it subsequently invokes export1, the ... 
+
+ HOW IT SHOULD READ:
+ ...so when it subsequently invokes export2, the ...  12/28/2012  
+ 60 Error in Text
+trap INT 
+
+ Should be:
+
+ trap - INT  9/17/09  
+ 60 Error in Text
+The executed script print out 
+ -"press interrupt (CTRL-C) to interrupt ...."
+
+ Should be: 
+ -"press interrupt (control-C) to interrupt ...."  03/21/2010  
+2 62 Text correction: Error in Options under "The find Command"
+The third entry in the table of Options near the bottom of the page, -maxdepths N
+ Should read -maxdepth N  3/12/14  
+ 68 Error in Text
+Section 4: 
+
+ The line reading ?Proceeding from the heat-oppressed brain?? should be deleted 
+
+Or 
+
+ Insert text:
+the command 
+$ grep -E [a-z]\{10\} words2.txt
+should be replaced with
+$ grep -E [A-Za-z]\{10\} words2.txt
+
+ 02/23/2012  
+2 72 Text Correction: Error in Code 
+CURRENTLY READS:
+ bar
+ fud
+ usr/bin/X11/startx
+ startx
+ /usr/local/etc
+ /usr
+ SHOULD READ:
+ bar
+ fud
+ usr/bin/X11/startx
+ startx
+ /usr/local/etc/
+ /usr/  10/02/14  
+ 94 Error in Text
+Second paragraph in "Directories" section: 
+
+ You can see the inode number for a file using ln -i.
+
+ Should be:
+
+ ... using ls -i.  1/11/10  
+ 142 Error in Text
+Try It Out: 
+ Text reading:
+ ./longopt: invalid option -- q 
+ should be deleted  02/23/2012  
+ 346 Error in Text
+Try It Out: 
+ The output from the SELECT LAST_INSERT_ID(); command is given as:
+ 14
+ 15
+
+ To be consistent with the previous sequence of steps and results in the text, should be: 
+ 12 
+ 13 
+ 02/23/2012  
+ 347 Error in Text
+At the bottom of the page:
+ We inserted childno 6
+ We inserted childno 7
+
+ To be consistent with the sequence of steps and results in the text, this should be:
+ We inserted childno 14
+ We inserted childno 15  02/23/2012  
+ 363 Error in Text
+The line:
+= cd.id AND track.track_id < 3
+
+
+ Should be:
+= cd.id AND track.track_id < 3;
+
+
+ If the MySQL Query Browser is used, the semi-colon is not needed. It is required for the command-line client.  02/23/2012  
+ 386 Error in Text
+In the 3rd paragraph, the sentence:
+Here you don't care too much about whether ensuring previous commands succeeded, so you can stick to the simpler form.
+ should be deleted.  02/23/2012  
+ 388-389 Error in Code
+The code download for Makefile6 in chapter 9 contains some additional lines for managing rpm files and manual pages which are not mentioned in the book text or used by the examples in the book. These additional lines can be ignored.  02/23/2012  
+ 416 Error in Text
+The sentences: 
+You can modify your earlier makefile, Makefile6, to add a new target to bundle the files into a tarball.
+ and
+The final version of the makefile, simply called Makefile, follows: 
+
+ should be replaced with:
+You can modify your earlier makefile, Makefile5, to add a new target to bundle the files into a tarball.
+ and
+The final version of the makefile, simply called Makefile, follows:  02/23/2012  
+ 487 Error in Code
+About 2/3 down the page:
+
+ CURRENTLY READS:
+ void (*) (int) sa_handler 
+
+ SHOULD READ:
+ void (*sa_handler)(int)  10/9/2013  
+ Chapter 6 Code file Error in Code
+In line 18 of the "chapter06/multiw1.c" source code file:
+ Currently reads:
+ refreshing the actual screen once the logical screen has been filled:
+ Should read:
+ refreshing the actual screen once the logical screen has been filled: */
+
+ Corrected file posted  02/23/2012  
+ Chapter 7 Code file Error in Code
+Line 42 of the chapter07/app/cd_data.h source code file:
+
+ Currently reads:
+ /* two for simple data retrival */ 
+ Should read: 
+ /* two for simple data retrieval */  02/23/2012  
+ 623 Error in Text
+First paragraph
+
+ Currently reads: 
+ "However, the local address (the server socket) is given as 1574 (or you may see mvel-lm as a service name), but the port chosen in the example is 9734. Why are they different? The answer is that port numbers and addresses are communicated over socket interfaces as binary numbers. Different computers use different byte ordering for integers. For example, an Intel processor stores the 32-bit integer as four consecutive bytes in memory in the order 1-2-3-4, where 1 is the most significant byte. IBM PowerPC processors would store the integer in the byte order 4-3-2-1. If the memory used for integers were simply copied byte-by-byte, the two different computers would not be able to agree on integer values." 
+
+ Should read:
+ "However, the local address (the server socket) is given as 1574 (or you may see mvel-lm as a service name), but the port chosen in the example is 9734. Why are they different? The answer is that port numbers and addresses are communicated over socket interfaces as binary numbers. Different computers use different byte ordering for integers. For example, an IBM PowerPC processor stores the 32-bit integer as four consecutive bytes in memory in the order 1-2-3-4, where 1 is the most significant byte. Intel processors would store the integer in the byte order 4-3-2-1. If the memory used for integers were simply copied byte-by-byte, the two different computers would not be able to agree on integer values."  01/02/2014  
+ 625 Error in Code
+CURRENTLY READS:
+    if(argc == 1) {
+        char myname[256];
+        gethostname(myname, 255);
+        host = myname;
+    }
+
+
+
+ SHOULD READ:
+    char myname[256];
+    if(argc == 1) {
+        gethostname(myname, 255);
+        host = myname;
+    }
+
+ 

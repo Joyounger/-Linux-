@@ -1,0 +1,18 @@
+byte order in chapter 15 
+
+--------------------------------------------------------------------------------
+
+Hello,
+
+Stones & Matthew's book Beginning Linux Programming 4/e, chapter 15, in section of "byte order", it said about Intel processor: 1-2-3-4 with a remark that 1 is the most significant byte. While introducing IBM PowerPC, the book mentioned 4-3-2-1 byte order.
+
+Intel should be little endian. PowerPC should be big endian.
+
+Therefore, in "1-2-3-4", 4 should be the most significant byte. 1 should NOT be the MSB.
+
+The 3/e of this book made the same mistake.
+
+Anybody agrees with me?
+
+Warm regards,
+Joel Ding

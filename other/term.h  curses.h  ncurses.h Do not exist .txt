@@ -1,0 +1,33 @@
+term.h / curses.h / ncurses.h Do not exist 
+
+--------------------------------------------------------------------------------
+
+Hi,
+
+I am using Ubuntu 8.04 and was trying the code at the end of chapter 5 (menu5.c). The program complains about term.h and curses.h. Even replacing curses with ncurses would not solve the problem.
+
+I ran a search on my system and there is none of these three file.
+
+What is going on here?
+
+Thanks
+
+
+Reply With Quote  
+
+  #2 (permalink)   Old August 12th, 2008, 01:59 AM  
+Lcstyle Lcstyle is offline 
+Registered User   Join Date: Aug 2008
+Location: , , .
+Posts: 2 
+Thanks: 0
+Thanked 0 Times in 0 Posts  
+ 
+Default 
+
+--------------------------------------------------------------------------------
+
+do a yum search ncurses or a yum list installed |grep ncurses to see if you have the ncurses pkgs installed.
+
+
+ 
